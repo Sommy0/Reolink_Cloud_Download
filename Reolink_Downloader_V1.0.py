@@ -148,7 +148,7 @@ with open(Path_csv_videos_notdownloaded, mode ='r',  encoding='utf-8-sig')as fil
       print(url[0])
       driver.get(url[0])
       time.sleep(10)
-      driver.find_element(By.XPATH,'//*[@id="player"]/section/main/div[1]/div[2]/ul/button[1]').click()
+      driver.find_element(By.XPATH,'//*[@id="player"]/section/main/div[1]/div[2]/ul/ul/div[1]/button').click()
       print("Heruntergeladen")
       videos_downloaded.append(url[0])
       time.sleep(10)
